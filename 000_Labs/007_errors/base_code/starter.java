@@ -13,7 +13,7 @@ class starter {
 		int count;
 		count = 589;
 		System.out.println(count);
-
+		
 		double sum;
 		double num1 = 12.2;
 		double num2 = 14.3;
