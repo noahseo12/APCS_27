@@ -15,11 +15,11 @@ class starter {
 		//System.out.println(x); 
 		//System.out.println(y);
 		//double x = Math.random()*9;
-		double x = (int)(Math.random()*(0+9));
+		double x = (int)(Math.random()*10);
 		System.out.print("A number between 0 - 9: ");
 		System.out.println(x);
 
-		double y = (int)(Math.random()*(1+100));
+		double y = (int)(Math.random()*(101));
 		System.out.print("A number between 1 - 100: ");
 		System.out.println(y);
 
