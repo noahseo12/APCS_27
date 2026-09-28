@@ -1,19 +1,20 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Noah Seo
+ *  Date: 9/22/26
 */
 
 import java.util.Scanner;
-Scanner sc = new Scanner(System.int);
+
 
 class starter {
 	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
 		System.out.print("Please enter your first number: ");
 		int x = sc.nextInt();
 		System.out.print("Please enter your second number: ");
 		int y = sc.nextInt();
 		System.out.print("Please enter your third number: ");
-		int z - sc.nextInt();
+		int z = sc.nextInt();
 		if(x>y&&x>z){
 			System.out.println("Your first number is the largest of the three!");
 			System.out.println("The number was "+ x);
@@ -29,6 +30,13 @@ class starter {
 		if(x<y&&x<z){
 			System.out.println("Your first number is the smallest of the three!");
 			System.out.println("The number was "+ x);
+		}
+		if(y<x&&y<z){
+			System.out.println("Your second number is the smallest of the three!");
+			System.out.println("The number was "+ y);
+		}if(z<y&&z<x){
+			System.out.println("Your third number is the smallest of the three!");
+			System.out.println("The number was "+ z);
 		}
 	}
 }
