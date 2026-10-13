@@ -13,4 +13,10 @@ class starter {
 
 		
 	}
+	public static int pow(int x, int y, int xy){
+		Scanner sc = new Scanner(System.in);
+		x = sc.nextInt();
+		y = sc.nextInt();
+		xy = x*y
+	}
 }
