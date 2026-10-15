@@ -1,8 +1,16 @@
 /*
- *	Author:
- *  Date:
+ *	Author:Noah Seo
+ *  Date:10/14/26
  * 	Collaborator(s): 
 */
+
+
+
+
+
+
+
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -14,8 +22,50 @@ class starter {
 
 	// The goal of the third method is to check if 3 numbers are consecutive. 15 16 17 are consecutive. It will print if they are or not.
 	// Assume that the first number is always the smallest and the third number is always the largest.
+	public static boolean isLeapYear(int year){
+		if(year%400==0){
+			return true;
+			
+		}
+		else if(year%100==0){
+			return false;
+		}
+		else if(year%4==0){
+			return true;
+		}
+		else{return false;
+		
+		}
+	}
+	public static int getDigitSum(int number){
+		
+		int sum =0;
+		while(number>0){
+			sum =sum + number%10;
+			number = number/10;
+
+			
+		}
+		return sum;
+
+	}
+
+	public static void printIfConsecutive(int num1, int num2, int num3){
+		if(num1 == num2-1&&num2 == num3-1){
+			System.out.println("The numbers are consecutive.");
+			
+			return;
+		}
+		else{
+			System.out.println("The numbers are not consecutive.");
+			return;
+		}
+
+
+	}
 
 	public static void main(String args[]) {
+		
 		System.out.println("----------------------------------------");
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a year: ");
