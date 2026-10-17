@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Noah Seo
+ *  Date: 10/17/26
 */
 
 import java.io.*;
@@ -14,12 +14,86 @@ class starter {
 
 	public static void main(String args[]) throws InterruptedException {
 		// Write your code here!
+		Scanner sc = new Scanner(System.in);
+	System.out.println("Welcome to type quest!");
+	System.out.println("It is currently "+getTime()+" and we're ready to play!");
+	System.out.println("Given a sentece, type it as fast as possible!");
+	System.out.println();
+	
+	System.out.println("-------------------------------------------------");
+	System.out.println("Would you like to:");
+	System.out.println("1 - Play random");
+	System.out.println("2 - Play Set");
+	System.out.println("3 - quit");
+	int choice = sc.nextInt();
+	sc.nextLine();
+	
+        
+        
+        while (choice != 3) {
+            System.out.println("-------------------------------------------------");
+            System.out.println("Would you like to:");
+            System.out.println("1 - Play random");
+            System.out.println("2 - Play Set");
+            System.out.println("3 - quit");
+            
+            choice = sc.nextInt();
+            sc.nextLine(); 
+
+            if (choice == 1 || choice == 2) {
+                String Sentence = "";
+                
+                if (choice == 1) {
+                    System.out.println("You've chosen to randomly select a sentence.");
+                    Sentence = getSentence();
+                } else {
+                    System.out.println("Please enter what number sentence you'd like to play:");
+                    int sentenceChoice = sc.nextInt();
+                    sc.nextLine(); // Clear buffer
+                    Sentence = getSentence(sentenceChoice);
+                }
+
+                System.out.println("-------------------------------------------------");
+                System.out.println(targetSentence);
+                System.out.println("-------------------------------------------------");
+                
+                countdown();
+                startTimer();
+                
+                String typedSentence = sc.nextLine();
+                
+                
+                double totalTimeInSeconds = endTimer();
+                System.out.println("Nice job! Here is your result!");
+                System.out.println("Time: " + totalTimeInSeconds + " seconds");
+                
+                
+                int errors = compareSentences(targetSentence, typedSentence);
+                System.out.println("Errors: " + errors);
+                
+                
+                double minutes = totalTimeInSeconds / 60.0;
+                if (minutes == 0) minutes = 0.001; 
+
+                int lpm = (int) (lettersInSentence(targetSentence) / minutes);
+                int wpm = (int) (wordsInSentence(targetSentence) / minutes);
+                
+                System.out.println(lpm + " letters per minute");
+                System.out.println(wpm + " words per minute");
+            }
+        }
+       
+    }
+
+	
+	
+	
 
 		
-	}
+	
 
 	// This method returns the local current time as a String
-	public static String getTime(){
+public static String getTime(){
 		LocalTime now = LocalTime.now();
         DateTimeFormatter format = DateTimeFormatter.ofPattern("hh:mm:ss a");
         return now.format(format);
@@ -107,4 +181,5 @@ class starter {
 		return errors;
 	}
 
-}
+
+	}

@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Noah Seo
+ *  Date: 10/15/26
 */
 
 import java.util.Scanner;
@@ -16,7 +16,7 @@ class starter {
 		System.out.println("Give me a number");
 		int y = sc.nextInt();
 		System.out.println("This is "+x+" to the "+y+" power.");
-		pow(x,y);
+		System.out.println(pow(x,y));
 
 
 
