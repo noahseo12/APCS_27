@@ -15,6 +15,7 @@ public class Employee {
 		lastName = new String("Scott");
 		salary = 6583.33;
 	}
+	
 
 	public Employee(int i, String fn, String ln, double s){		// int, String, String, int Constructor
 		ID = i;

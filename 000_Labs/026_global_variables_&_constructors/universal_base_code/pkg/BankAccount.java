@@ -6,22 +6,38 @@
 package pkg;
 import java.util.*;
 
-private class BankAccount {
+public class BankAccount {
 	// -------GLOBAL VARIABLES-------
 	private String Owner;
 	private int AccountNumber;
 	private double balance;
 	private boolean isActive;
-	private double nextAccountNumber = (Math.random()*1950)+50;
+	private static int nextAccountNumber = (int)(Math.random()*1950)+50;
 
 	// -------CONSTRUCTORS-------
-	private BankAccount(){
+
+	
+	public BankAccount(double b, String O){
+		Owner = O;
 		isActive = true;
+		balance = b;
+		AccountNumber = nextAccountNumber;
+		nextAccountNumber = nextAccountNumber+1;
+		
 	}
-	private BankAccount()[
-		balance = 0.0;
+		// -------METHODS-------
+	private String Owner(){
+		return Owner;
 
-	]
-	// -------METHODS-------
+	}
+	private int accountnumber(){
+		return AccountNumber;
+	}
 
+	private double balance(){
+		return balance;
+	}
+	private boolean isActive(){
+		return isActive;
+	}
 }
