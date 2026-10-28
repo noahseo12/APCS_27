@@ -24,7 +24,37 @@ class starter {
 
 	public static void main(String args[]) {
 		// Your code goes below here
-		PooleDwarf test = new PooleDwarf();
+		PooleDwarf test = new PooleDwarf(rand, 13);
 		
+		PooleDwarf test1 = new PooleDwarf(rand, 13);
+		PooleDwarf test2 = new PooleDwarf(rand, 13);
+		PooleDwarf test3 = new PooleDwarf(rand, 13);
+		PooleDwarf test4 = new PooleDwarf(rand, 13);
+		PooleDwarf test5 = new PooleDwarf(rand, 13);
+		PooleDwarf test6 = new PooleDwarf(rand, 13);
+		int test = 0;
+		int test1 = 0;
+		int test2 = 0;
+		int test3 = 0;
+		int test4 = 0;
+		int test5 = 0;
+		int test6 = 0;
+		
+		if(test.isSameName("Dopey")){
+			test++;
+		}
+		test1.isSameName("Bashful");
+		test2.isSameName("Grumpy");
+
+		test3.isSameName("Sleepy");
+		test4.isSameName("Sneezy");
+		test5.isSameName("Happy");
+
+		test6.isSameName("Doc");
+		
+		
+
+
+
 	}
 }

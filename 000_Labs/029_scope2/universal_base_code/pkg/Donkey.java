@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Noah Seo
+ *  Date: 10/27/26
 */
 
 package pkg;
@@ -9,13 +9,13 @@ import java.util.Random;
 
 
 public class Donkey {
-	private String name;
+	public String name;
 
-	private Donkey() {
+	public Donkey() {
 		name = "Donkey";
 	}
 
-	private String getName(){
+	public String getName(){
 		return name;
 	}
 
