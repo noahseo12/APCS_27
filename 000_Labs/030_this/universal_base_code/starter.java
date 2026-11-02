@@ -24,6 +24,44 @@ class starter {
 
 	public static void main(String args[]) {
 		// Your code goes below here
+		int test = 0;
+		int test1 = 0;
+		int test2 = 0;
+		int test3 = 0;
+		int test4 = 0;
+		int test5 = 0;
+		int test6 = 0;
+		int ii= 0;
+		while(ii<7){
+			PooleDwarf Dwarf = new PooleDwarf(randName(), 13);
+				
+		for(int i =1; i<7; i++){
+		if(Dwarf.isSameName("Dopey")){
+			test++;
+		}
+		if(Dwarf.isSameName("Bashful")){
+			test1++;
+		}
+		if(Dwarf.isSameName("Grumpy")){
+			test2++;
+		}
+		if(Dwarf.isSameName("Sleepy")){
+			test3++;
+		}
+		if(Dwarf.isSameName("Sneezy")){
+			test4++;
+		}
+		if(Dwarf.isSameName("Happy")){
+			test5++;
+		}
+		if(Dwarf.isSameName("Happy")){
+			test6++;
+		}
+		
+		}
+		ii++;
+		}
+		/*
 		PooleDwarf Dwarf = new PooleDwarf(randName(), 13);
 		
 		PooleDwarf Dwarf1 = new PooleDwarf(randName(), 13);
@@ -32,54 +70,26 @@ class starter {
 		PooleDwarf Dwarf4 = new PooleDwarf(randName(), 13);
 		PooleDwarf Dwarf5 = new PooleDwarf(randName(), 13);
 		PooleDwarf Dwarf6= new PooleDwarf(randName(), 13);
-		int test = 0;
-		int test1 = 0;
-		int test2 = 0;
-		int test3 = 0;
-		int test4 = 0;
-		int test5 = 0;
-		int test6 = 0;
-		
-		if(Dwarf.isSameName("Dopey")){
-			test++;
-		}
-		if(Dwarf1.isSameName("Bashful")){
-			test1++;
-		}
-		if(Dwarf2.isSameName("Grumpy")){
-			test2++;
-		}
-		if(Dwarf3.isSameName("Sleepy")){
-			test3++;
-		}
-		if(Dwarf4.isSameName("Sneezy")){
-			test4++;
-		}
-		if(Dwarf5.isSameName("Happy")){
-			test5++;
-		}
-		if(Dwarf6.isSameName("Doc")){
-			test6++;
-		}
+	*/
 		if((test>test1)&&(test>test2)&&(test>test3)&&(test>test4)&&(test>test5)&&(test>test6)){
 			System.out.println("Dopey was the most common name with "+test+" matches");
 		}
-		if((test1>test)&&(test1>test2)&&(test1>test3)&&(test1>test4)&&(test1>test5)&&(test1>test6)){
+		else if((test1>test)&&(test1>test2)&&(test1>test3)&&(test1>test4)&&(test1>test5)&&(test1>test6)){
 			System.out.println("Bashful was the most common name with "+test1+" matches");
 		}
-		if((test2>test1)&&(test2>test)&&(test2>test3)&&(test2>test4)&&(test2>test5)&&(test2>test6)){
+		else if((test2>test1)&&(test2>test)&&(test2>test3)&&(test2>test4)&&(test2>test5)&&(test2>test6)){
 			System.out.println("Grumpy was the most common name with "+test2+" matches");
 		}
-		if((test3>test1)&&(test3>test2)&&(test3>test)&&(test3>test4)&&(test3>test5)&&(test3>test6)){
+		else if((test3>test1)&&(test3>test2)&&(test3>test)&&(test3>test4)&&(test3>test5)&&(test3>test6)){
 			System.out.println("Sleepy was the most common name with "+test3+" matches");
 		}
-		if((test4>test1)&&(test4>test2)&&(test4>test3)&&(test4>test)&&(test4>test5)&&(test4>test6)){
+		else if((test4>test1)&&(test4>test2)&&(test4>test3)&&(test4>test)&&(test4>test5)&&(test4>test6)){
 			System.out.println("Sneezy was the most common name with "+test4+" matches");
 		}
-		if((test5>test1)&&(test5>test2)&&(test5>test3)&&(test5>test4)&&(test5>test)&&(test5>test6)){
+		else if((test5>test1)&&(test5>test2)&&(test5>test3)&&(test5>test4)&&(test5>test)&&(test5>test6)){
 			System.out.println("Happy was the most common name with "+test5+" matches");
 		}
-		if((test6>test1)&&(test6>test2)&&(test6>test3)&&(test6>test4)&&(test6>test5)&&(test6>test)){
+		else{
 			System.out.println("Doc was the most common name with "+test6+" matches");
 		}
 		
