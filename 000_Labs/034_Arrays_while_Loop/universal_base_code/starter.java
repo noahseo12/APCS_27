@@ -10,10 +10,17 @@ import java.util.Random;
 
 class starter {
 	public static void main(String args[]) {
-		// Your code goes below here
-		BaseClass test = new BaseClass();
-
-
+		int count = 1;
+		int []arr = new int[1000];
+		while(count<1000){
+			arr[count] = (int)(Math.random()*1000)+1;
+			count++;
+		}
+		count = 1;
+		while(count<1000){
+			System.out.println(arr[count]);
+			count++;
+		}
 		
 	}
 }
